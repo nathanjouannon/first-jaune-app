@@ -16,7 +16,6 @@ app.post("/api/wilder", wilderCtlr.create)
 
 const start = async () => {
   await dataSource.initialize();
-  dataSource.getRepository(Wilders).save({ name : "frist wilder"})
   app.listen(3000, () => console.log("Server started on 3000"));
 }
 
